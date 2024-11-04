@@ -1,3 +1,4 @@
 HelloVST3.vst3/
 zig-cache/
 zig-out/
+.zig-cache/

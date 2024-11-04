@@ -256,11 +256,11 @@ fn AudioProcessor(
             // Handle Events
             const event_count = data.inputEvents.lpVtbl.getEventCount(data.inputEvents);
             for (0..@intCast(event_count)) |idx| {
-                var event: ?*c.Steinberg_Vst_Event = null;
+                var event: ?*c.Steinberg_Vst_Event = undefined;
                 _ = data.inputEvents.lpVtbl.getEvent(
                     data.inputEvents,
                     @intCast(idx),
-                    @ptrCast(event),
+                    @ptrCast(&event),
                 );
             }
 
