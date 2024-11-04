@@ -1,11 +1,12 @@
 const std = @import("std");
+const slint = @import("slint");
 const c = @import("ext/vst3.zig");
 const assert = std.debug.assert;
 const ctrl = @import("controller.zig");
 const proc = @import("processor.zig");
 
 pub const std_options = std.Options{
-    .log_level = .debug,
+    .log_level = .info,
 };
 
 // Global Allocator

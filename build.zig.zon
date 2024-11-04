@@ -1,0 +1,16 @@
+.{
+    .name = "hello-vst3",
+    .version = "0.1.0",
+    .paths = .{
+        "src",
+        "build.zig",
+        "build.zig.zon",
+    },
+    .dependencies = .{
+        .slint = .{
+            .url = "git+https://github.com/slint-ui/slint.git#v1.3.2",
+            // Хэш нужно будет заменить на актуальный после первой попытки сборки
+            .hash = "122019df49f75e57883c44aa8255c37228de29ad27aba5ac7332fe066897edf0be2f",
+        },
+    },
+}
